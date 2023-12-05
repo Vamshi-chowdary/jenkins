@@ -1,0 +1,21 @@
+import javax.swing.*;
+import java.awt.*;
+import javax.swing.JComponent;
+class LineDrawing extends JComponent {
+  
+    public void paint(Graphics g)
+    {
+        g.drawLine(100, 75, 125, 150);
+        g.drawLine(125, 75, 150, 150);
+    }
+}
+public class Graphics101 {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("My first JFrame");
+        frame.setSize(600, 600);  
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
+        frame.getContentPane().add(new LineDrawing ());
+        frame.setVisible(true);  
+    }
+    
+}
